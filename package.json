@@ -4,6 +4,15 @@
     "description": "Automatically jump out of specific with enter",
     "version": "0.1.0",
     "publisher": "VincentLi",
+    "homepage": "https://github.com/vinlyx/vscode-smartenter",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vinlyx/vscode-smartenter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/vinlyx/vscode-smartenter/issues",
+        "email": "vincentliyx@gmail.com"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },

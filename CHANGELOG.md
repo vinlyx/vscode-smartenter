@@ -1,7 +1,8 @@
 # Change Log
-All notable changes to the "smartenter" extension will be documented in this file.
+No changes since it is the first release.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Please free free to report bugs of improvement to Github issue tracker:
+[Github issue tracker](https://github.com/vinlyx/vscode-smartenter/issues)
 
-## [Unreleased]
+## [0.1.0]
 - Initial release
