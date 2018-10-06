@@ -11,7 +11,10 @@ export function activate(context: vscode.ExtensionContext) {
     // This line of code will only be executed once when your extension is activated
     // console.log('Congratulations, your extension "smartenter" is now active!');
     const matchChar = vscode.workspace.getConfiguration().get("smartenter.chars");
-    let bracketEnd = new Set(matchChar.split(""));
+    if (!matchChar){
+        return;
+    };
+    let bracketEnd = new Set(String(matchChar).split(""));
 
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
@@ -19,6 +22,9 @@ export function activate(context: vscode.ExtensionContext) {
     let disposable_SE = vscode.commands.registerCommand('smartEnter', () => {
         // The code you place here will be executed every time your command is executed
         const editor = vscode.window.activeTextEditor;
+        if (!editor){
+            return;
+        };
         let currentLineText = editor.document.lineAt(editor.selection.active.line).text;
 
         // Display a message box to the user
